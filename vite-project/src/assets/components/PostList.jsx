@@ -7,3 +7,9 @@ export default function PostList({ postList, filteringTerm, handleClick }) {
                 .filter((post) =>
                     post.title.toLowerCase().includes(filteringTerm.toLowerCase())
                 )
+                .map((post) => (
+                    <Post key={post.id} post={post} handleClick={handleClick} />
+                ))}
+        </section>
+    );
+}
