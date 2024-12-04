@@ -17,4 +17,13 @@ export default function Main() {
         setPosts(newPosts);
     }
 
-    return (
+    function handleSubmit(e) {
+        e.preventDefault();
+
+
+
+
+
+
+
+        return (
