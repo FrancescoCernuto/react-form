@@ -16,3 +16,5 @@ export default function Main() {
         const newPosts = posts.filter((post) => post.id !== id);
         setPosts(newPosts);
     }
+
+    return (
