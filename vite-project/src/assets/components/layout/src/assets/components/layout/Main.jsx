@@ -43,3 +43,8 @@ export default function Main() {
         const newCardList = [...cardList, newCard];
 
         setCardList(newCardList)
+
+        setFormData(formInitialData);
+        e.target.publishInput.checked = false;
+        e.target.category.value = "";
+    }
