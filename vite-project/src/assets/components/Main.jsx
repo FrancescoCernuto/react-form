@@ -20,6 +20,14 @@ export default function Main() {
     function handleSubmit(e) {
         e.preventDefault();
 
+        const newPost = {
+            title: titleInput,
+            content: contentInput,
+            status: statusInput,
+            author: authorInput,
+            id: posts.length,
+        };
+
 
 
 
