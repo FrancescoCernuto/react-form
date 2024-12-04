@@ -26,3 +26,20 @@ export default function Main() {
         };
         setFormData(newFormData);
     }
+
+    function handleSubmit(e) {
+        e.preventDefault();
+
+        const newCard = {
+            author: formData.author,
+            content: formData.content,
+            id: cardList.length + 1,
+            image: "https://placehold.co/600x400",
+            isPublic: formData.isPublic,
+            tags: [],
+            title: formData.title,
+            category: formData.category,
+        };
+        const newCardList = [...cardList, newCard];
+
+        setCardList(newCardList)
