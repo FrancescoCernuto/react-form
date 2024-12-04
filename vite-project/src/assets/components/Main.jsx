@@ -25,13 +25,18 @@ export default function Main() {
             content: contentInput,
             status: statusInput,
             author: authorInput,
-            id: posts.length,
+            id: posts.length + 1,
         };
 
+        const newPosts = [...posts, newPost];
+
+        setPosts(newPosts);
+
+        setTitleInput("");
+        setAuthorInput("");
+        setStatusInput("");
+        setContentInput("");
+    }
 
 
-
-
-
-
-        return (
+    return (
