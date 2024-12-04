@@ -9,4 +9,10 @@ export default function Main() {
     const [contentInput, setContentInput] = useState("");
 
     const [filterInput, setFilterInput] = useState("");
-}
+
+    const [posts, setPosts] = useState(data);
+
+    function handleClick(id) {
+        const newPosts = posts.filter((post) => post.id !== id);
+        setPosts(newPosts);
+    }
