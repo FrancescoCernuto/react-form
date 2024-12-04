@@ -8,4 +8,5 @@ export default function Main() {
     const [statusInput, setStatusInput] = useState("");
     const [contentInput, setContentInput] = useState("");
 
+    const [filterInput, setFilterInput] = useState("");
 }
